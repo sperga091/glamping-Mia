@@ -1,0 +1,315 @@
+/*slika1*/
+.container-slika1 {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.slika1 {
+  width: 100%;
+  height: 100vh;
+}
+
+.napis-slika1 {
+  position: absolute;
+  top: 55%;
+  right: 5%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  align-items: flex-end;
+  text-align: center;
+  width: auto;
+}
+
+.napis-slika1 .napis {
+  background: rgba(34, 43, 25, 0.7);
+  width: 100%;
+  padding: 15px 30px;
+  border-radius: 14px;
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #f2e6d0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(6px);
+  transition: transform 0.3s, background 0.3s, border 0.3s;
+
+  border: 4px solid transparent;
+  background-clip: padding-box;
+  position: relative;
+}
+
+.napis-slika1 .napis::before {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  right: -6px;
+  bottom: -6px;
+  border-radius: 18px;
+  background: url('https://www.transparenttextures.com/patterns/leaf.png');
+  background-size: cover;
+  z-index: -1;
+  opacity: 0.8;
+  transition: opacity 0.3s;
+}
+
+.napis-slika1 .napis:hover {
+  background: rgba(48, 63, 30, 0.85); /* Temnejši zeleni odtenek za efekt globine */
+  transform: scale(1.05);
+}
+
+.napis-slika1 .napis:hover::before {
+  opacity: 1;
+}
+
+
+@media (max-width: 1200px) {
+  .napis-slika1 {
+      top: 60%;
+      right: 2%;
+      width: 100%;
+      align-items: center;
+      gap: 1rem;
+  }
+
+  .napis-slika1 .napis {
+      font-size: 1.5em;
+      padding: 12px 25px;
+  }
+}
+
+@media (max-width: 900px) {
+  .napis-slika1 {
+      top: 65%;
+      width: 100%;
+      align-items: center;
+      text-align: center;
+  }
+
+  .napis-slika1 .napis {
+      font-size: 1.2em;
+      padding: 10px 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .napis-slika1 {
+      top: 70%;
+      right: 0;
+      width: 100%;
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  .napis-slika1 .napis {
+      font-size: 1em;
+      padding: 8px 15px;
+      width: 80%;
+      text-align: center;
+  }
+}
+
+
+
+
+/* o nas */
+
+.o_nas{
+  display: flex;
+  justify-content: center;
+  padding: 200px 0px;
+}
+
+.slika2{
+  max-width: 50%;
+  border-radius: 20px 0px 0px 20px;
+}
+.napis-slika2 h1{
+  font-size: 135%;
+}
+.napis-slika2 hr{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.napis-slika2{
+  background-color: rgb(3, 3, 3, 0.8);
+  color: aliceblue;
+  max-width: 700px;
+  font-size: 155%;
+  padding: 20px;
+  border-radius: 0px 20px 20px 0px;
+}
+
+@media (max-width: 900px) {
+  .napis-slika2{
+    font-size: 150%;
+  }
+  .o_nas{
+    padding: 150px 0px;
+  }
+}
+
+@media (max-width: 600px) {
+  .napis-slika2{
+    font-size: 100%;
+  }
+  .o_nas{
+    padding: 50px 0px;
+  }
+}
+
+
+
+/*storitve*/
+#storitve_naslov {
+  display: flex;
+  justify-content: center;
+  color: aliceblue;
+  font-size: 400%;
+  font-weight: bold;
+}
+
+.Storitve {
+  max-width: 80%;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.Storitve_container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.Storitve_vsebina {
+  background-color: rgba(3, 3, 3, 0.8);
+  border-radius: 20px;
+  width: 30%;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.Storitve_vsebina img {
+  width: 100%;
+  height: 300px;
+  max-height: 300px;
+  object-fit: cover;
+}
+
+.Storitve_vsebina h2 {
+  margin-top: 20px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.Storitve_vsebina div {
+  font-size: 1.7em;
+  color: white;
+  text-align: justify;
+  margin: 10px 0;
+}
+
+.Storitve_vsebina a {
+  text-decoration: none;
+  color: white;
+  background-color: #113630;
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 20px;
+  font-size: 1.5em;
+  transition: transform 0.3s;
+  align-self: center; 
+}
+
+.Storitve_vsebina {
+  background-color: rgba(3, 3, 3, 0.8);
+  border-radius: 20px;
+  width: 30%;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  box-sizing: border-box;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.Storitve_vsebina a:hover {
+  background-color: gray;
+  filter: opacity(50%);
+}
+
+.Storitve_vsebina:hover {
+  transform: scale(1.05);
+  background-color: rgba(200, 200, 200, 0.2);
+}
+
+
+
+
+@media (max-width: 1600px) {
+  .Storitve_container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Storitve_vsebina {
+    width: 70%;
+  }
+
+  .Storitve_vsebina img {
+    height: 300px;
+    max-height: 300px;
+  }
+
+  .Storitve_vsebina h2 {
+    font-size: 1.5em;
+  }
+
+  .Storitve_vsebina div {
+    font-size: 1.3em; 
+  }
+}
+
+@media (max-width: 1000px) {
+  .Storitve_container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Storitve_vsebina {
+    width: 90%;
+  }
+
+  .Storitve_vsebina img {
+    height: 200px;
+    max-height: 200px;
+  }
+
+  .Storitve_vsebina h2 {
+    font-size: 1.3em; 
+  }
+
+  .Storitve_vsebina div {
+    font-size: 1.1em; 
+  }
+}
